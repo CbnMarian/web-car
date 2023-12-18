@@ -1,0 +1,74 @@
+.container-nav-bar {
+  align-items: center;
+  background-color: initial;
+  display: flex;
+  height: auto;
+  justify-content: space-between;
+  left: 0;
+  margin: 0 auto;
+  max-width: 133rem;
+  padding: 2.7rem 2rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+}
+
+.container-nav-bar {
+  height: 100%;
+  width: 100%;
+}
+
+.navbar__middle li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+
+  transition: color 0.3s ease;
+}
+
+.navbar__middle li:hover {
+  cursor: pointer;
+  color: #ff4d30;
+}
+
+.navbar__buttons {
+  align-items: center;
+  display: flex;
+  font-family: Rubik, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  gap: 2.5rem;
+}
+
+.navbar__buttons a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar__buttons__signIn:hover {
+  color: #ff4d30;
+}
+
+.navbar__buttons__Register {
+  background-color: #ff4d30;
+  border-radius: 3px;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
+  color: #fff;
+  padding: 1rem 1.5rem;
+  transition: all 0.3s;
+}
+
+.navbar__buttons__Register:hover {
+  color: black;
+  background-color: #ff4224;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.8);
+}
