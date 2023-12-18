@@ -47,11 +47,14 @@
 
 .navbar__buttons a {
   text-decoration: none;
-  color: #000;
+
   font-weight: bold;
   transition: color 0.3s ease;
   font-size: 1rem;
   transition: color 0.3s ease;
+}
+.navbar__buttons__signIn {
+  color: #000;
 }
 
 .navbar__buttons__signIn:hover {
@@ -62,9 +65,9 @@
   background-color: #ff4d30;
   border-radius: 3px;
   box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.35);
-  color: #fff;
   padding: 1rem 1.5rem;
   transition: all 0.3s;
+  color: #fff;
 }
 
 .navbar__buttons__Register:hover {

@@ -1,11 +1,12 @@
 import React from "react";
 import "./navbar.css";
+import carLogo from "../../assets/1carlogo.png";
 
 const NavBar = () => {
   return (
     <div className="container-nav-bar">
       <div>
-        <img src="../../assets/new-profile.jpg" alt="logo" />
+        <img src={carLogo} alt="logo" />
       </div>
       <ul className="navbar__middle">
         <li>Home</li>
