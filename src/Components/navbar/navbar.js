@@ -1,6 +1,7 @@
 import React from "react";
 import "./navbar.css";
 import carLogo from "../../assets/1carlogo.png";
+import Burger from "./burger";
 
 const NavBar = () => {
   return (
@@ -8,14 +9,8 @@ const NavBar = () => {
       <div>
         <img src={carLogo} alt="logo" />
       </div>
-      <ul className="navbar__middle">
-        <li>Home</li>
-        <li>About</li>
-        <li>Vehicle Models</li>
-        <li>Testimonials</li>
-        <li>Our Team</li>
-        <li>Contact</li>
-      </ul>
+      <Burger />
+
       <div className="navbar__buttons">
         <a className="navbar__buttons__signIn" href="#">
           Sign In
@@ -24,7 +19,6 @@ const NavBar = () => {
           Register
         </a>
       </div>
-      <div className="mobile-hamb">X</div>
     </div>
   );
 };

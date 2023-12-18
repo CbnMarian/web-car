@@ -14,12 +14,6 @@
   width: 100%;
   z-index: 99999;
 }
-
-.container-nav-bar {
-  height: 100%;
-  width: 100%;
-}
-
 .navbar__middle li {
   list-style-type: none;
   display: inline-block;
@@ -68,6 +62,15 @@
   padding: 1rem 1.5rem;
   transition: all 0.3s;
   color: #fff;
+}
+@media (max-width: 768px) {
+  .navbar__buttons__Register {
+    padding: 0.5rem 0.75rem;
+  }
+  .container-nav-bar img {
+    width: 100px;
+    height: auto;
+  }
 }
 
 .navbar__buttons__Register:hover {
