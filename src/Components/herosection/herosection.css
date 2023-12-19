@@ -8,7 +8,7 @@
 .container {
   margin: 0 auto !important;
   max-width: 133rem !important;
-  padding: 0 3.5rem !important;
+  padding: 0 6.5rem !important;
 }
 .hero__content__car {
   margin-top: 5rem;
@@ -125,6 +125,9 @@
   .bg-shape,
   .hero__content__car {
     display: none;
+  }
+  .container {
+    padding: 0 3rem !important;
   }
 
   .hero-section {

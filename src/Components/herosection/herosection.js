@@ -28,7 +28,7 @@ const Hero = () => {
                 <CheckCircleOutlineOutlinedIcon style={{ marginLeft: "8px" }} />
               </a>
               <a className="hero__content__btn__learn" href="/learn-more">
-                Lear More <ArrowForwardIosIcon style={{ marginLeft: "8px" }} />
+                Learn More <ArrowForwardIosIcon style={{ marginLeft: "8px" }} />
               </a>
             </div>
           </div>

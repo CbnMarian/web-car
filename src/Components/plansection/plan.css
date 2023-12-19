@@ -1,15 +1,7 @@
 .plan-section {
   background-color: #fff;
 }
-.container {
-  margin: 0 auto;
-  max-width: 133rem;
-  padding: 0 2.5rem;
-}
-.plan-container {
-  display: flex;
-  flex-direction: column;
-}
+
 .plan-container-title {
   color: #010103;
   margin: 0 auto;
@@ -44,7 +36,7 @@
 }
 
 .plan-container-inside img {
-  width: 100%;
+  width: 70%;
   height: auto;
 }
 
