@@ -23,11 +23,11 @@ const Hero = () => {
               and unforgettable travel experience.
             </p>
             <div className="hero__content__btn">
-              <a className="hero__content__btn__book" href="#">
+              <a className="hero__content__btn__book" href="/book-ride">
                 Book Ride{" "}
                 <CheckCircleOutlineOutlinedIcon style={{ marginLeft: "8px" }} />
               </a>
-              <a className="hero__content__btn__learn" href="#">
+              <a className="hero__content__btn__learn" href="/learn-more">
                 Lear More <ArrowForwardIosIcon style={{ marginLeft: "8px" }} />
               </a>
             </div>

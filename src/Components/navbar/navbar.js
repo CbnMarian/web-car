@@ -12,10 +12,10 @@ const NavBar = () => {
       <Burger />
 
       <div className="navbar__buttons">
-        <a className="navbar__buttons__signIn" href="#">
+        <a className="navbar__buttons__signIn" href="/signin">
           Sign In
         </a>
-        <a className="navbar__buttons__Register" href="#">
+        <a className="navbar__buttons__Register" href="/register">
           Register
         </a>
       </div>
