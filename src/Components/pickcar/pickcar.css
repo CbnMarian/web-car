@@ -34,6 +34,15 @@
   text-align: center;
   transition: all 0.2s;
 }
+
+.pick-box button.active {
+  background-color: #ff4d30;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.5);
+  transform: translateY(-2px);
+  transition: all 0.2s;
+}
+
 .colored-button {
   background-color: #ff4d30;
   color: #fff;

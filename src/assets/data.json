@@ -3,73 +3,80 @@
     {
       "audi_a1": {
         "img": "./audia1.png",
-        "price_per_day": 90,
+        "mark": "Audi",
+        "price_per_day": 25,
         "model": "Audi A1",
         "make_year": 2022,
-        "doors": 3,
-        "ac": true,
-        "transmission": "manual",
+        "doors": 5,
+        "ac": "Yes",
+        "transmission": "Manual",
         "fuel": "Gasoline"
       }
     },
     {
       "vw_golf_6": {
         "img": "./golf6.png",
-        "price_per_day": 85,
+        "mark": "Volskwagen",
+        "price_per_day": 30,
         "model": "VW Golf 6",
         "make_year": 2021,
         "doors": 5,
-        "ac": true,
-        "transmission": "automatic",
-        "fuel": "diesel"
+        "ac": "Yes",
+        "transmission": "Automatic",
+        "fuel": "Diesel"
       }
     },
     {
       "toyota_aygo": {
         "img": "./aygo.png",
-        "price_per_day": 80,
+
+        "mark": "Toyota",
+        "price_per_day": 20,
         "model": "Toyota Aygo",
         "make_year": 2020,
-        "doors": 3,
-        "ac": true,
-        "transmission": "manual",
-        "fuel": "Gasoline"
+        "doors": 5,
+        "ac": "Yes",
+        "transmission": "Manual",
+        "fuel": "Gasoline + LPG"
       }
     },
     {
       "bmw_320": {
         "img": "./320w.png",
-        "price_per_day": 110,
+        "mark": "BMW",
+        "price_per_day": 55,
         "model": "BMW 320",
         "make_year": 2023,
-        "doors": 4,
-        "ac": true,
-        "transmission": "automatic",
+        "doors": 5,
+        "ac": "Yes",
+        "transmission": "Automatic",
         "fuel": "Gasoline"
       }
     },
     {
       "mercedes_benz_glk": {
         "img": "./glk.png",
-        "price_per_day": 120,
+        "mark": "Mercedes-Benz",
+        "price_per_day": 60,
         "model": "Mercedes-Benz GLK",
         "make_year": 2022,
         "doors": 5,
-        "ac": true,
-        "transmission": "automatic",
-        "fuel": "diesel"
+        "ac": "Yes",
+        "transmission": "Automatic",
+        "fuel": "Diesel"
       }
     },
     {
       "lexus_nx300h": {
         "img": "./nx300.png",
-        "price_per_day": 150,
+        "mark": "Lexus",
+        "price_per_day": 70,
         "model": "Lexus NX300h",
         "make_year": 2023,
         "doors": 5,
-        "ac": true,
-        "transmission": "automatic",
-        "fuel": "hybrid"
+        "ac": "Yes",
+        "transmission": "Automatic",
+        "fuel": "hybrid + Gasoline"
       }
     }
   ]
