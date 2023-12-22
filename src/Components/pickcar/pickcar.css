@@ -1,3 +1,16 @@
+.spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 450px;
+  width: 450px;
+  transition: opacity 0.9s ease-in-out;
+}
+.spinner.hidden {
+  opacity: 0;
+}
+
 .pick-section {
   padding: 10rem 0;
 }
@@ -57,9 +70,19 @@
   position: relative;
 }
 
+.car-image {
+  opacity: 1;
+  transition: opacity 0.9s ease-in-out;
+}
+
+.car-image.loaded {
+  opacity: 0;
+}
+
 .pick-description {
   width: 25rem;
 }
+
 .pick-description-price {
   justify-content: center;
   align-items: center;
@@ -147,6 +170,10 @@
     flex-direction: column;
   }
 
+  .spinner {
+    width: 6rem;
+    height: 10rem;
+  }
   .pick-car {
     max-width: 15rem;
   }

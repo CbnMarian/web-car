@@ -83,10 +83,14 @@ const PickCar = () => {
               <div className="pick-car">
                 {imageLoading ? (
                   <div className="spinner">
-                    <img src={spinner} alt="spinner" />
+                    <img
+                      src={spinner}
+                      alt="spinner"
+                      className="spinner-image"
+                    />
                   </div>
                 ) : (
-                  <img src={selectedCar} alt="car" />
+                  <img src={selectedCar} alt="car" className="car-image" />
                 )}
               </div>
               <div className="pick-description">
