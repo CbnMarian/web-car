@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./pickcar.css";
 import aygo from "../../assets/aygo.png";
 import data from "../../assets/data.json";
+import spinner from "../../assets/spinner.gif";
 
 // Import all car images
 import audia1Img from "../../assets/audia1.png";
@@ -21,20 +22,39 @@ const carImages = {
 };
 
 const PickCar = () => {
+  // State for selected car image
   const [selectedCar, setSelectedCar] = useState(aygo);
+
+  // State for selected car data
   const [selectedCarData, setSelectedCarData] = useState(null);
+
+  // State for active button
   const [activeButton, setActiveButton] = useState(null);
 
-  const handleButtonClick = (carKey) => {
+  // State for loading status
+  const [imageLoading, setImageLoading] = useState(false);
+
+  const handleButtonClick = async (carKey) => {
+    // Set active button instantly
+    setActiveButton(carKey);
+
+    // Set loading to true only for the image
+    setImageLoading(true);
+
     const carData = data.cars.find((car) => car[carKey]);
+
     if (carData) {
       const selectedCarImage = carImages[carKey];
+
+      // Simulating delay only for the image loading
+      await new Promise((resolve) => setTimeout(resolve, 500));
+
       setSelectedCar(selectedCarImage);
       setSelectedCarData(carData[carKey]);
-      setActiveButton(carKey);
     }
-  };
 
+    setImageLoading(false);
+  };
   return (
     <section className="pick-section">
       <div className="container">
@@ -61,7 +81,13 @@ const PickCar = () => {
             </div>
             <div className="box-cars">
               <div className="pick-car">
-                <img src={selectedCar} alt="car" />
+                {imageLoading ? (
+                  <div className="spinner">
+                    <img src={spinner} alt="spinner" />
+                  </div>
+                ) : (
+                  <img src={selectedCar} alt="car" />
+                )}
               </div>
               <div className="pick-description">
                 <div className="pick-description-price">
