@@ -4,6 +4,7 @@ import BookingNow from "../Components/booking/bookingnow";
 import PlanSection from "../Components/plansection/plan";
 import PickCar from "../Components/pickcar/pickcar";
 import Banner from "../Components/banner/banner";
+import ChooseUs from "../Components/whyChooseUs/chooseUs";
 
 const Home = () => (
   <div>
@@ -13,6 +14,7 @@ const Home = () => (
     <PlanSection />
     <PickCar />
     <Banner />
+    <ChooseUs />
   </div>
 );
 
