@@ -7,35 +7,54 @@ const ChooseUs = () => {
     <section className="choose-section">
       <div className="container">
         <div choose-contaienr>
-          <img className="choose-container__img" src={cars} />
+          <img className="choose-container__img" src={cars} alt="cars-fundal" />
         </div>
         <div className="text-container">
           <div className="text-container__left">
-            <h4>why us</h4>
-            <h2>Best value</h2>
-            <p>lorem iplsmul</p>
+            <h4>Why To Pick Us!</h4>
+            <h2>
+              Explore our unbeatable offers, delivering the best value you'll
+              ever find!
+            </h2>
+            <p>
+              Explore unmatched savings with our extraordinary deals! We are
+              committed to delivering unparalleled value, ensuring you access
+              premium services and products without straining your budget. Dive
+              into a world of unbeatable offers tailored to enhance your renting
+              experience. Don't let this opportunity slip away – seize the
+              chance to save significantly and embark on a journey of
+              affordability and excellence!
+            </p>
             <a href="#home">Find Details</a>
           </div>
           <div className="text-container__right">
             <div className="text-container__right__box">
               <img></img>
               <div className="text-container__right__box__text">
-                <h4>bla bla</h4>
-                <p>Text text</p>
+                <h4>Discover the Boundless Beauty</h4>
+                <p>
+                  Elevate your road trip experience with our premium fleet of
+                  vehicles, perfect for your cross-country adventures.
+                </p>
               </div>
             </div>
             <div className="text-container__right__box">
               <img></img>
               <div className="text-container__right__box__text">
-                <h4>bla bla</h4>
-                <p>Text text</p>
+                <h4>All Inclusive</h4>
+                <p>
+                  Your All-Inclusive Journey Starts with Transparent Pricing.
+                </p>
               </div>
             </div>
             <div className="text-container__right__box">
               <img></img>
               <div className="text-container__right__box__text">
-                <h4>bla bla</h4>
-                <p>Text text</p>
+                <h4>No Hidden Charges</h4>
+                <p>
+                  Unwind with Our Honest and Transparent Pricing - No Hidden
+                  Charges, Only Peace of Mind.
+                </p>
               </div>
             </div>
           </div>
