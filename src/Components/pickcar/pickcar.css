@@ -99,7 +99,7 @@
 
 .pick-description-table {
   display: grid;
-  font-size: 1.2rem;
+  font-size: 1rem;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
 }
