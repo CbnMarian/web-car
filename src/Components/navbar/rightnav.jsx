@@ -26,7 +26,7 @@ const Ul = styled.ul`
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     flex-flow: column nowrap;
     background-color: #ffffff;
     position: fixed;

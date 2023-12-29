@@ -63,7 +63,7 @@
   transition: all 0.3s;
   color: #fff;
 }
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .navbar__buttons__Register {
     padding: 0.5rem 0.75rem;
   }

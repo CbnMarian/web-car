@@ -17,10 +17,12 @@ const PlanSection = () => {
           </div>
           <div className="plan-container-boxes">
             <div className="plan-container-inside">
-              <img src={orangeCircle} alt="circle" />
-              <span>
-                <CarRentalOutlinedIcon style={{ fontSize: "66px" }} />
-              </span>
+              <div>
+                <img src={orangeCircle} alt="circle" />
+                <span>
+                  <CarRentalOutlinedIcon style={{ fontSize: "66px" }} />
+                </span>
+              </div>
 
               <h3>Select your ride</h3>
               <p>
