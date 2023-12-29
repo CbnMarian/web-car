@@ -1,4 +1,5 @@
 import "./bookingnow.css";
+import React, { useState } from "react";
 import Paper from "@mui/material/Paper";
 import DirectionsCarFilledOutlinedIcon from "@mui/icons-material/DirectionsCarFilledOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
@@ -10,6 +11,41 @@ import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 
 const BookingNow = () => {
+  const [carType, setCarType] = useState("");
+  const [pickUpLocation, setPickUpLocation] = useState("");
+  const [dropOffLocation, setDropOffLocation] = useState("");
+  const [pickUpDate, setPickUpDate] = useState(null);
+  const [dropOffDate, setDropOffDate] = useState(null);
+  const [errorMessage, setErrorMessage] = useState(null);
+  const [successMessage, setSuccessMessage] = useState(null);
+
+  const handleInputChange = (setter) => (event) => {
+    setter(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    // Check if all required fields are filled
+    if (
+      carType &&
+      pickUpLocation &&
+      dropOffLocation &&
+      pickUpDate &&
+      dropOffDate
+    ) {
+      // All fields are filled, show success message
+      setSuccessMessage("Check your email to confirm an order");
+      setErrorMessage(null);
+    } else {
+      // Some fields are missing, show error message
+      setErrorMessage("All fields are required!");
+      setSuccessMessage(null);
+    }
+    console.log("errorMessage:", errorMessage);
+    console.log("successMessage:", successMessage);
+  };
+
   const paperStyles = {
     margin: "0 auto 10rem",
   };
@@ -17,6 +53,7 @@ const BookingNow = () => {
     fontSize: 20,
     marginRight: 8,
   };
+
   return (
     <div className="booking__section">
       <div className="container">
@@ -24,20 +61,27 @@ const BookingNow = () => {
           <div className="book__content">
             <div className="book_content_box">
               <h2>Pick your car</h2>
-              <p className="error_message">
-                All fields required! <ClearOutlinedIcon />
-              </p>
-              <p className="booking_done">
-                Check your email to confirm an order
-                <ThumbUpAltOutlinedIcon />
-              </p>
-              <form className="box_form">
+              {errorMessage && (
+                <p className={`error_message ${errorMessage ? "" : "hidden"}`}>
+                  {errorMessage}&nbsp;&nbsp; <ClearOutlinedIcon />
+                </p>
+              )}
+              {successMessage && (
+                <p className={`booking_done ${successMessage ? "" : "hidden"}`}>
+                  {successMessage}&nbsp;&nbsp; <ThumbUpAltOutlinedIcon />
+                </p>
+              )}
+              <form className="box_form" onSubmit={handleSubmit}>
                 <div className="box_form_car_type">
                   <label>
                     <DirectionsCarFilledOutlinedIcon style={iconStyles} />
-                    Select Your Car Type
+                    Select Your Car Type&nbsp;<b>*</b>
                   </label>
-                  <select>
+                  <select
+                    value={carType}
+                    onChange={handleInputChange(setCarType)}
+                    required
+                  >
                     <option>Select your car type</option>
                     <option>Audi a1</option>
                     <option>VW Golf 6</option>
@@ -50,9 +94,13 @@ const BookingNow = () => {
                 <div className="box_form_car_type">
                   <label>
                     <LocationOnOutlinedIcon style={iconStyles} />
-                    Pick-up
+                    Pick-up &nbsp;<b>*</b>
                   </label>
-                  <select>
+                  <select
+                    value={pickUpLocation}
+                    onChange={handleInputChange(setPickUpLocation)}
+                    required
+                  >
                     <option>Select pick up location</option>
                     <option>Bucharest</option>
                     <option>Cluj</option>
@@ -61,10 +109,14 @@ const BookingNow = () => {
                 <div className="box_form_car_type">
                   <label>
                     <LocationOnOutlinedIcon style={iconStyles} />
-                    Drop-Of
+                    Drop-Off&nbsp;<b>*</b>
                   </label>
-                  <select>
-                    <option>Select Drop-of location</option>
+                  <select
+                    value={dropOffLocation}
+                    onChange={handleInputChange(setDropOffLocation)}
+                    required
+                  >
+                    <option>Select Drop-off location</option>
                     <option>Bucharest</option>
                     <option>Cluj</option>
                   </select>
@@ -72,19 +124,27 @@ const BookingNow = () => {
                 <div className="box_form_car_time">
                   <label>
                     <CalendarMonthOutlinedIcon style={iconStyles} />
-                    Pick-up
+                    Pick-up&nbsp;<b>*</b>
                   </label>
                   <LocalizationProvider dateAdapter={AdapterDayjs}>
-                    <DatePicker />
+                    <DatePicker
+                      value={pickUpDate}
+                      onChange={(date) => setPickUpDate(date)}
+                      required
+                    />
                   </LocalizationProvider>
                 </div>
                 <div className="box_form_car_time">
                   <label>
                     <CalendarMonthOutlinedIcon style={iconStyles} />
-                    Drop-Of
+                    Drop-Off&nbsp;<b>*</b>
                   </label>
                   <LocalizationProvider dateAdapter={AdapterDayjs}>
-                    <DatePicker />
+                    <DatePicker
+                      value={dropOffDate}
+                      onChange={(date) => setDropOffDate(date)}
+                      required
+                    />
                   </LocalizationProvider>
                 </div>
                 <button className="btn-pick-car" type="submit">

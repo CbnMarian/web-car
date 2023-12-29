@@ -45,13 +45,15 @@
   border: 1px solid transparent;
   border-radius: 0.8rem;
   color: #721c24;
-  display: none;
-  font-size: 1.6rem;
+  display: block;
+  font-size: 1rem;
   font-weight: 500;
-  justify-content: space-between;
+  text-align: center;
+  display: flex;
+  justify-content: center;
   margin-bottom: 1.8rem;
   margin-top: -1rem;
-  padding: 1rem 1.4rem;
+  padding: 1rem 1rem;
 }
 .booking_done {
   align-items: center;
@@ -59,13 +61,17 @@
   border: 1px solid transparent;
   border-radius: 0.8rem;
   color: #2a6817;
-  display: none;
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-weight: 500;
-  justify-content: space-between;
+  text-align: center;
+  display: flex;
+  justify-content: center;
   margin-bottom: 1.8rem;
   margin-top: -1rem;
-  padding: 1rem 1.4rem;
+  padding: 1rem 1rem;
+}
+.hidden {
+  display: none;
 }
 
 .box_form {
@@ -76,6 +82,12 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto auto;
 }
+
+.box_form b {
+  color: #ff4224;
+  font-size: 13px;
+}
+
 .box_form_car_type {
   display: flex;
   flex-direction: column;
