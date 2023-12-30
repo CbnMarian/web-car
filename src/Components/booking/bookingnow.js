@@ -55,7 +55,7 @@ const BookingNow = () => {
   };
 
   return (
-    <div className="booking__section">
+    <div id="booking__section" className="booking__section">
       <div className="container">
         <Paper elevation={5} style={paperStyles}>
           <div className="book__content">
