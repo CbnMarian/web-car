@@ -1,6 +1,9 @@
 import "./chooseUs.css";
 import React from "react";
 import cars from "../../assets/cars.png";
+import attention from "../../assets/attention.png";
+import bluebmw from "../../assets/bmwblue.png";
+import dollar from "../../assets/dollar sign.png";
 
 const ChooseUs = () => {
   return (
@@ -29,7 +32,7 @@ const ChooseUs = () => {
           </div>
           <div className="text-container__right">
             <div className="text-container__right__box">
-              <img></img>
+              <img src={bluebmw} alt="IMG" />
               <div className="text-container__right__box__text">
                 <h4>Discover the Boundless Beauty</h4>
                 <p>
@@ -39,7 +42,7 @@ const ChooseUs = () => {
               </div>
             </div>
             <div className="text-container__right__box">
-              <img></img>
+              <img src={dollar} alt="IMG" />
               <div className="text-container__right__box__text">
                 <h4>All Inclusive</h4>
                 <p>
@@ -48,7 +51,7 @@ const ChooseUs = () => {
               </div>
             </div>
             <div className="text-container__right__box">
-              <img></img>
+              <img src={attention} alt="IMG" />
               <div className="text-container__right__box__text">
                 <h4>No Hidden Charges</h4>
                 <p>

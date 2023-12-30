@@ -8,7 +8,7 @@ import React from "react";
 //
 const Hero = () => {
   return (
-    <section className="hero-section">
+    <section id="home" className="hero-section">
       <div className="container">
         <div className="hero__content">
           <img className="bg-shape" src={pataportocalie} alt="img-bg" />
