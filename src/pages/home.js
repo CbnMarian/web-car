@@ -7,6 +7,7 @@ import Banner from "../Components/banner/banner";
 import ChooseUs from "../Components/whyChooseUs/chooseUs";
 import Testimonials from "../Components/Testimonialss/testimonials";
 import FAQ, { faqs } from "../Components/FAQ/FAQ";
+import Download from "../Components/download/download";
 
 const Home = () => (
   <div>
@@ -19,6 +20,7 @@ const Home = () => (
     <ChooseUs />
     <Testimonials />
     <FAQ data={faqs} />
+    <Download />
   </div>
 );
 

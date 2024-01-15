@@ -1,0 +1,46 @@
+.download-section {
+  background-color: #f8f8f8;
+  background-image: url(../../assets/review/ph.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 350px 410px;
+  background-position: 100% 50%;
+  height: auto;
+  padding: 10rem 0;
+  width: 100%;
+}
+
+.download-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 30rem;
+  text-align: left;
+}
+.download-text h2 {
+  color: #010103;
+  font-size: 2.3rem;
+}
+.download-text p {
+  color: #706f7b;
+  font-family: Rubik, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.download-text__btns {
+  display: flex;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+.download-text__btns img {
+  cursor: pointer;
+  width: 35%;
+}
+@media (max-width: 900px) {
+  .download-section {
+    background-image: none;
+  }
+  .download-text__btns img {
+    width: 45%;
+  }
+}

@@ -1,6 +1,6 @@
-import Img1 from "../../assets/review/12.png";
-import Img2 from "../../assets/review/appstore.png";
-import Img3 from "../../assets/review/googleplay.png";
+import "./download.css";
+import Img2 from "../../assets/review/1.png";
+import Img3 from "../../assets/review/2.png";
 
 function Download() {
   return (
@@ -16,7 +16,7 @@ function Download() {
             </p>
             <div className="download-text__btns">
               <img alt="download_img" src={Img2} />
-              <img alt="download_img" src={Img1} />
+              <img alt="download_img" src={Img3} />
             </div>
           </div>
         </div>
