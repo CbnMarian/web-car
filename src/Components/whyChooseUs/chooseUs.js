@@ -4,6 +4,7 @@ import cars from "../../assets/cars.png";
 import attention from "../../assets/attention.png";
 import bluebmw from "../../assets/bmwblue.png";
 import dollar from "../../assets/dollar sign.png";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 const ChooseUs = () => {
   return (
@@ -28,7 +29,10 @@ const ChooseUs = () => {
               chance to save significantly and embark on a journey of
               affordability and excellence!
             </p>
-            <a href="#home">Find Details</a>
+            <a href="#home">
+              Find Details
+              <ArrowForwardIosIcon style={{ marginLeft: "8px" }} />
+            </a>
           </div>
           <div className="text-container__right">
             <div className="text-container__right__box">
