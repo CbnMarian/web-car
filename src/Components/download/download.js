@@ -10,9 +10,10 @@ function Download() {
           <div className="download-text">
             <h2>Download our app to get most out of it</h2>
             <p>
-              Thrown shy denote ten ladies though ask saw. Or by to he going
-              think order event music. Incommode so intention defective at
-              convinced. Led income months itself and houses you.
+              Ten ladies, once shy, now curious, observed a musical event with
+              anticipation. Despite initial hesitations, strong convictions
+              emerged. Over the next few months, both income and new homes
+              flourished, marking a transformative journey.
             </p>
             <div className="download-text__btns">
               <img alt="download_img" src={Img2} />
