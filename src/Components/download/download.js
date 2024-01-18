@@ -6,6 +6,9 @@ import Img2 from "../../assets/review/1.png";
 import Img3 from "../../assets/review/2.png";
 
 function Download() {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  });
   return (
     <>
       <section className="download-section" data-aos="fade-up">

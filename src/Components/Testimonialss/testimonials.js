@@ -8,6 +8,9 @@ import { Rating } from "@mui/material";
 import { useState } from "react";
 
 function Testimonials() {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  });
   const [value] = useState("5");
 
   return (

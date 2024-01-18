@@ -20,6 +20,9 @@ const faqs = [
 ];
 
 export default function FAQ({ data }) {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  });
   const [curOpen, setIsOpen] = useState(null);
   return (
     <section className="faq-section" data-aos="fade-up">

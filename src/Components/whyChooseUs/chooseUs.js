@@ -9,6 +9,9 @@ import dollar from "../../assets/dollar sign.png";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 const ChooseUs = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  });
   return (
     <section className="choose-section">
       <div className="container" data-aos="fade-up">
