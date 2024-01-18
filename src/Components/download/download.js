@@ -1,3 +1,6 @@
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./download.css";
 import Img2 from "../../assets/review/1.png";
 import Img3 from "../../assets/review/2.png";
@@ -5,7 +8,7 @@ import Img3 from "../../assets/review/2.png";
 function Download() {
   return (
     <>
-      <section className="download-section">
+      <section className="download-section" data-aos="fade-up">
         <div className="container">
           <div className="download-text">
             <h2>Download our app to get most out of it</h2>

@@ -1,3 +1,6 @@
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { useState } from "react";
 import "./FAQ.css";
 
@@ -19,7 +22,7 @@ const faqs = [
 export default function FAQ({ data }) {
   const [curOpen, setIsOpen] = useState(null);
   return (
-    <section className="faq-section">
+    <section className="faq-section" data-aos="fade-up">
       <div className="accordion">
         {data.map((el, i) => (
           <AccordionItem

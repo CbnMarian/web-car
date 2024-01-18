@@ -1,5 +1,7 @@
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./chooseUs.css";
-import React from "react";
 import cars from "../../assets/cars.png";
 import attention from "../../assets/attention.png";
 import bluebmw from "../../assets/bmwblue.png";
@@ -9,7 +11,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 const ChooseUs = () => {
   return (
     <section className="choose-section">
-      <div className="container">
+      <div className="container" data-aos="fade-up">
         <div choose-contaienr>
           <img className="choose-container__img" src={cars} alt="cars-fundal" />
         </div>

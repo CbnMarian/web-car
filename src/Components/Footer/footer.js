@@ -1,3 +1,6 @@
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./footer.css";
 import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 import EmailIcon from "@mui/icons-material/Email";
@@ -6,7 +9,7 @@ function Footer() {
     <>
       <footer>
         <div className="container">
-          <div className="footer-content">
+          <div className="footer-content" data-aos="fade-up">
             <ul className="footer-content__1">
               <li>
                 <span>CAR</span> Rental

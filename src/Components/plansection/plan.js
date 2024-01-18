@@ -1,3 +1,6 @@
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./plan.css";
 import orangeCircle from "../../assets/transparent.png";
 import CarRentalOutlinedIcon from "@mui/icons-material/CarRentalOutlined";
@@ -5,10 +8,13 @@ import PhoneForwardedOutlinedIcon from "@mui/icons-material/PhoneForwardedOutlin
 import SurfingOutlinedIcon from "@mui/icons-material/SurfingOutlined";
 
 const PlanSection = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  });
   return (
     <section className="plan-section">
       <div className="container">
-        <div className="plan-container">
+        <div className="plan-container" data-aos="fade-up">
           <div className="plan-container-title">
             <h3>Easy & Fast</h3>
             <h2>

@@ -1,4 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./pickcar.css";
 import aygo from "../../assets/aygo.png";
 import data from "../../assets/data.json";
@@ -22,6 +25,10 @@ const carImages = {
 };
 
 const PickCar = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  });
+
   // State for selected car image
   const [selectedCar, setSelectedCar] = useState(aygo);
 
@@ -59,12 +66,12 @@ const PickCar = () => {
     <section className="pick-section">
       <div className="container">
         <div className="pick-container">
-          <div className="pick-title">
+          <div className="pick-title" data-aos="fade-up">
             <h3>Vehicle Model</h3>
             <h2>Our rental fleet</h2>
           </div>
           <div className="pick-container-car-content">
-            <div className="pick-box">
+            <div className="pick-box" data-aos="fade-up">
               {data.cars.map((car) => {
                 const carKey = Object.keys(car)[0];
                 return (
@@ -79,7 +86,7 @@ const PickCar = () => {
                 );
               })}
             </div>
-            <div className="box-cars">
+            <div className="box-cars" data-aos="fade-up">
               <div className="pick-car">
                 {imageLoading ? (
                   <div className="spinner">

@@ -1,3 +1,6 @@
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./testimonials.css";
 import photo1 from "../../assets/review/rev1.png";
 import photo2 from "../../assets/review/review2.png";
@@ -11,7 +14,7 @@ function Testimonials() {
     <>
       <section className="testimonials-section">
         <div className="container">
-          <div className="testimonials-content">
+          <div className="testimonials-content" data-aos="fade-up">
             <div className="testimonials-content__title">
               <h2>Reviewed by People</h2>
               <p>

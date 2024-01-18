@@ -1,5 +1,7 @@
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./bookingnow.css";
-import React, { useState } from "react";
 import Paper from "@mui/material/Paper";
 import DirectionsCarFilledOutlinedIcon from "@mui/icons-material/DirectionsCarFilledOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
@@ -11,6 +13,9 @@ import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 
 const BookingNow = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  });
   const [carType, setCarType] = useState("");
   const [pickUpLocation, setPickUpLocation] = useState("");
   const [dropOffLocation, setDropOffLocation] = useState("");
@@ -57,7 +62,7 @@ const BookingNow = () => {
   return (
     <div id="booking__section" className="booking__section">
       <div className="container">
-        <Paper elevation={5} style={paperStyles}>
+        <Paper elevation={5} style={paperStyles} data-aos="fade-up">
           <div className="book__content">
             <div className="book_content_box">
               <h2>Pick your car</h2>

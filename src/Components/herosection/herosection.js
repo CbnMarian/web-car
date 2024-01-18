@@ -1,18 +1,23 @@
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./herosection.css";
 import toyotaimg from "../../assets/toyota.png";
 import pataportocalie from "../../assets/pata_portocalie.png";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import CheckCircleOutlineOutlinedIcon from "@mui/icons-material/CheckCircleOutlineOutlined";
-import React from "react";
 //
 //
 const Hero = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  });
   return (
     <section id="home" className="hero-section">
       <div className="container">
-        <div className="hero__content">
+        <div className="hero__content" data-aos="fade-up">
           <img className="bg-shape" src={pataportocalie} alt="img-bg" />
-          <div className="hero__content__text">
+          <div className="hero__content__text" data-aos="fade-right">
             <h4>Rent a Car</h4>
             <h1>
               Do it <span>FAST</span> and <span>EASY</span>
