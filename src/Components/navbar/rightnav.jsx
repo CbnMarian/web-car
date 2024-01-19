@@ -44,10 +44,12 @@ const Ul = styled.ul`
       color: #000000;
       cursor: pointer;
       font-weight: 500;
+      white-space: nowrap;
 
       a {
-        text-decoration: none; /* Remove underline */
-        color: inherit; /* Inherit the color from the parent li */
+        text-decoration: none;
+        color: inherit;
+        white-space: nowrap;
       }
     }
   }
