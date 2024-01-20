@@ -61,37 +61,33 @@ const RightNav = ({ open, handleClose }) => {
   return (
     <Ul open={open}>
       <li>
-        <a href="#home" onClick={handleItemClick}>
+        <a href="/Home" onClick={handleItemClick}>
           Home
         </a>
       </li>
       <li>
-        <a href="#about" onClick={handleItemClick}>
+        <a href="/About" onClick={handleItemClick}>
           About
         </a>
       </li>
       <li>
-        <a href="#vehicles" onClick={handleItemClick}>
-          Vehicles
+        <a href="/VehiclesModels" onClick={handleItemClick}>
+          Vehicles Models
         </a>
       </li>
+
       <li>
-        <a href="#models" onClick={handleItemClick}>
-          Models
-        </a>
-      </li>
-      <li>
-        <a href="#testimonials" onClick={handleItemClick}>
+        <a href="/Testimonials" onClick={handleItemClick}>
           Testimonials
         </a>
       </li>
       <li>
-        <a href="#our-team" onClick={handleItemClick}>
+        <a href="/OurTeam" onClick={handleItemClick}>
           Our Team
         </a>
       </li>
       <li>
-        <a href="#contact" onClick={handleItemClick}>
+        <a href="/Contact" onClick={handleItemClick}>
           Contact
         </a>
       </li>

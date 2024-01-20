@@ -17,10 +17,10 @@ const NavBar = () => {
       <Burger />
 
       <div className="navbar__buttons">
-        <a className="navbar__buttons__signIn" href="/signin">
+        <a className="navbar__buttons__signIn" href="/Home">
           Sign In
         </a>
-        <a className="navbar__buttons__Register" href="/register">
+        <a className="navbar__buttons__Register" href="*">
           Register
         </a>
       </div>
