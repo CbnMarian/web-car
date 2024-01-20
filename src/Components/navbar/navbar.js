@@ -17,7 +17,7 @@ const NavBar = () => {
       <Burger />
 
       <div className="navbar__buttons">
-        <a className="navbar__buttons__signIn" href="/Home">
+        <a className="navbar__buttons__signIn" href="*">
           Sign In
         </a>
         <a className="navbar__buttons__Register" href="*">

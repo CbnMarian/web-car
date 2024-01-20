@@ -34,7 +34,7 @@ const ChooseUs = () => {
               chance to save significantly and embark on a journey of
               affordability and excellence!
             </p>
-            <a href="#home">
+            <a href="/Home">
               Find Details
               <ArrowForwardIosIcon style={{ marginLeft: "8px" }} />
             </a>
