@@ -12,8 +12,8 @@
 
 .button {
   border-radius: 10px;
-  background-color: #ff4d30;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 0 3px 10px 5px rgba(0, 0, 0, 0.8);
   display: flex;
   font-family: Poppins, sans-serif;
   font-size: 1.2rem;
@@ -28,8 +28,8 @@
 }
 .button:hover {
   color: rgb(250, 215, 62);
-  background-color: #ff4224;
-  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.8);
+  background-color: rgb(255, 228, 108);
+  box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.8);
   cursor: pointer;
 }
 
