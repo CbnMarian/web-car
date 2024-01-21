@@ -71,23 +71,23 @@ const RightNav = ({ open, handleClose }) => {
         </a>
       </li>
       <li>
-        <a href="*" onClick={handleItemClick}>
+        <a href="/NoPage" onClick={handleItemClick}>
           Vehicles Models
         </a>
       </li>
 
       <li>
-        <a href="*" onClick={handleItemClick}>
+        <a href="/NoPage" onClick={handleItemClick}>
           Testimonials
         </a>
       </li>
       <li>
-        <a href="*" onClick={handleItemClick}>
+        <a href="/NoPage" onClick={handleItemClick}>
           Our Team
         </a>
       </li>
       <li>
-        <a href="*" onClick={handleItemClick}>
+        <a href="/NoPage" onClick={handleItemClick}>
           Contact
         </a>
       </li>

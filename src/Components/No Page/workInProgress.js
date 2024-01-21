@@ -12,7 +12,7 @@ function WorkInProgress() {
           <div class="loader"></div>
         </div>
         <div className="button">
-          <a className="button-text" href="/Home">
+          <a className="button-text" href="*">
             Press to go Home
           </a>
         </div>
