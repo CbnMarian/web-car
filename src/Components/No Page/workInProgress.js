@@ -1,6 +1,7 @@
 import "./workInProgress.css";
 import lader from "../../assets/from outside/crane.gif";
 import laptop from "../../assets/from outside/laptop.png";
+import { Link } from "react-router-dom";
 
 function WorkInProgress() {
   return (
@@ -12,9 +13,9 @@ function WorkInProgress() {
           <div class="loader"></div>
         </div>
         <div className="button">
-          <a className="button-text" href="/">
+          <Link className="button-text" to="/">
             Press to go Home
-          </a>
+          </Link>
         </div>
         <div>
           <img className="lader" src={lader} alt="content" />

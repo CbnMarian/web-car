@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Ul = styled.ul`
   list-style: none;
@@ -61,35 +62,34 @@ const RightNav = ({ open, handleClose }) => {
   return (
     <Ul open={open}>
       <li>
-        <a href="/Home" onClick={handleItemClick}>
+        <Link to="/Home" onClick={handleItemClick}>
           Home
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="/About" onClick={handleItemClick}>
+        <Link to="/About" onClick={handleItemClick}>
           About
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="/NoPage" onClick={handleItemClick}>
+        <Link to="/NoPage" onClick={handleItemClick}>
           Vehicles Models
-        </a>
+        </Link>
       </li>
-
       <li>
-        <a href="/NoPage" onClick={handleItemClick}>
+        <Link to="/NoPage" onClick={handleItemClick}>
           Testimonials
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="/NoPage" onClick={handleItemClick}>
+        <Link to="/NoPage" onClick={handleItemClick}>
           Our Team
-        </a>
+        </Link>
       </li>
       <li>
-        <a href="/NoPage" onClick={handleItemClick}>
+        <Link to="/NoPage" onClick={handleItemClick}>
           Contact
-        </a>
+        </Link>
       </li>
     </Ul>
   );
