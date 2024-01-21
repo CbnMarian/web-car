@@ -6,7 +6,6 @@ import Contact from "./pages/Contact";
 import OurTeam from "./pages/OurTeam";
 import Testimonials from "./pages/Testimonials";
 import VehicleModels from "./pages/vehicleModels";
-import NoPage from "./pages/noPage";
 
 function App() {
   return (
@@ -18,7 +17,6 @@ function App() {
         <Route path="/OurTeam" element={<OurTeam />} />
         <Route path="/Testimonials" element={<Testimonials />} />
         <Route path="/VehicleModels" element={<VehicleModels />} />
-        <Route path="*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>
   );
