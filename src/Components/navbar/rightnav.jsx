@@ -62,7 +62,7 @@ const RightNav = ({ open, handleClose }) => {
   return (
     <Ul open={open}>
       <li>
-        <Link to="/Home" onClick={handleItemClick}>
+        <Link to="/" onClick={handleItemClick}>
           Home
         </Link>
       </li>
