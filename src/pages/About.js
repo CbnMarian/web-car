@@ -4,6 +4,9 @@ import Rent from "../assets/from outside/rent.jpg";
 import Footer from "../Components/Footer/footer";
 import PlanSection from "../Components/plansection/plan";
 import "../Components/Styles/About.css";
+import LocationCityIcon from "@mui/icons-material/LocationCity";
+import ConstructionIcon from "@mui/icons-material/Construction";
+import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
 const Home = () => (
   <div>
     <>
@@ -28,26 +31,26 @@ const Home = () => (
               </p>
               <div className="about-main__text__icons">
                 <div className="about-main__Text__icons__box">
-                  <img alt="img" />
+                  <LocationCityIcon style={{ color: "#ff4d30" }} />
                   <span>
-                    <h4>xx</h4>
-                    <p>car</p>
+                    <h4>10</h4>
+                    <p>Car Types</p>
                   </span>
                 </div>
 
                 <div className="about-main__Text__icons__box">
-                  <img alt="img" />
+                  <DirectionsCarIcon style={{ color: "#ff4d30" }} />
                   <span>
-                    <h4>xx</h4>
-                    <p>car</p>
+                    <h4>2</h4>
+                    <p>Rental Outlets</p>
                   </span>
                 </div>
 
                 <div className="about-main__Text__icons__box">
-                  <img alt="img" />
+                  <ConstructionIcon style={{ color: "#ff4d30" }} />
                   <span>
-                    <h4>xx</h4>
-                    <p>car</p>
+                    <h4>7</h4>
+                    <p>Repair Shop</p>
                   </span>
                 </div>
               </div>

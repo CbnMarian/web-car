@@ -2,10 +2,10 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./plan.css";
-import orangeCircle from "../../assets/transparent.png";
-import CarRentalOutlinedIcon from "@mui/icons-material/CarRentalOutlined";
-import PhoneForwardedOutlinedIcon from "@mui/icons-material/PhoneForwardedOutlined";
-import SurfingOutlinedIcon from "@mui/icons-material/SurfingOutlined";
+
+import transparent1 from "../../assets/transparent1.png";
+import transparent2 from "../../assets/transparent2.png";
+import transparent3 from "../../assets/transparent3.png";
 
 const PlanSection = () => {
   useEffect(() => {
@@ -24,10 +24,7 @@ const PlanSection = () => {
           <div className="plan-container-boxes">
             <div className="plan-container-inside">
               <div>
-                <img src={orangeCircle} alt="circle" />
-                <span>
-                  <CarRentalOutlinedIcon style={{ fontSize: "66px" }} />
-                </span>
+                <img src={transparent1} alt="circle" />
               </div>
 
               <h3>Select your ride</h3>
@@ -37,10 +34,8 @@ const PlanSection = () => {
               </p>
             </div>
             <div className="plan-container-inside">
-              <img src={orangeCircle} alt="circle" />
-              <span>
-                <PhoneForwardedOutlinedIcon style={{ fontSize: "66px" }} />
-              </span>
+              <img src={transparent2} alt="circle" />
+
               <h3>Contact Us!</h3>
               <p>
                 Our knowledgeable and friendly operators are always ready to
@@ -48,10 +43,8 @@ const PlanSection = () => {
               </p>
             </div>
             <div className="plan-container-inside">
-              <img src={orangeCircle} alt="circle" />
-              <span>
-                <SurfingOutlinedIcon style={{ fontSize: "66px" }} />
-              </span>
+              <img src={transparent3} alt="circle" />
+
               <h3>Let's drive</h3>
               <p>
                 Whether you're hitting the open road, we've got you covered with

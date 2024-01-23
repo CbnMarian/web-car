@@ -61,7 +61,7 @@
 @media screen and (max-width: 1000px) {
   .about-main__img {
     height: auto;
-    width: 100%;
+    width: 300px;
   }
 
   .about-main {
@@ -72,9 +72,5 @@
 
   .about-main__text {
     text-align: center;
-  }
-
-  .about-main__text__icons {
-    grid-template-columns: 1fr;
   }
 }
