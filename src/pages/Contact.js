@@ -5,6 +5,7 @@ import PlanSection from "../Components/plansection/plan";
 import ChooseUs from "../Components/whyChooseUs/chooseUs";
 
 import Footer from "../Components/Footer/footer";
+import BannerCall from "../Components/bannercall/bannercall";
 
 const Home = () => (
   <div>
@@ -13,6 +14,8 @@ const Home = () => (
     <PlanSection />
 
     <ChooseUs />
+
+    <BannerCall />
 
     <Footer />
   </div>

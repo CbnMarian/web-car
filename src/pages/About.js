@@ -10,6 +10,7 @@ import "../Components/Styles/About.css";
 import LocationCityIcon from "@mui/icons-material/LocationCity";
 import ConstructionIcon from "@mui/icons-material/Construction";
 import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
+import BannerCall from "../Components/bannercall/bannercall";
 const Home = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
@@ -66,6 +67,8 @@ const Home = () => {
             </div>
           </div>
           <PlanSection />
+
+          <BannerCall />
 
           <Footer />
         </section>
