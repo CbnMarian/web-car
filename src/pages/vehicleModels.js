@@ -27,7 +27,7 @@ const Home = () => {
             <HeroPages name="Models" />
             <div className="container">
               <div className="models-div">
-                <div className="models-div__box">
+                <div className="models-div__box" data-aos="fade-down">
                   <div className="models-div__box__img">
                     <img src={CarImg1} alt="car_img" />
                     <div className="models-div__box__descr">
@@ -63,7 +63,7 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <div className="models-div__box">
+                <div className="models-div__box" data-aos="fade-down">
                   <div className="models-div__box__img">
                     <img src={CarImg2} alt="car_img" />
                     <div className="models-div__box__descr">
@@ -99,7 +99,7 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <div className="models-div__box">
+                <div className="models-div__box" data-aos="fade-down">
                   <div className="models-div__box__img">
                     <img src={CarImg3} alt="car_img" />
                     <div className="models-div__box__descr">
@@ -135,7 +135,7 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <div className="models-div__box">
+                <div className="models-div__box" data-aos="fade-down">
                   <div className="models-div__box__img">
                     <img src={CarImg4} alt="car_img" />
                     <div className="models-div__box__descr">
@@ -171,7 +171,7 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <div className="models-div__box">
+                <div className="models-div__box" data-aos="fade-down">
                   <div className="models-div__box__img">
                     <img src={CarImg5} alt="car_img" />
                     <div className="models-div__box__descr">
@@ -207,7 +207,7 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <div className="models-div__box">
+                <div className="models-div__box" data-aos="fade-down">
                   <div className="models-div__box__img">
                     <img src={CarImg6} alt="car_img" />
                     <div className="models-div__box__descr">
