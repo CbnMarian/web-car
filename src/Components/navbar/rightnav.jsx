@@ -72,7 +72,7 @@ const RightNav = ({ open, handleClose }) => {
         </Link>
       </li>
       <li>
-        <Link to="/NoPage" onClick={handleItemClick}>
+        <Link to="/VehicleModels" onClick={handleItemClick}>
           Vehicles Models
         </Link>
       </li>

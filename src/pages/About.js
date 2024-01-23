@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import NavBar from "../Components/navbar/navbar";
 import HeroPages from "../Components/HeroPages/HeroPages";
+import NavBar from "../Components/navbar/navbar";
 import Rent from "../assets/from outside/rent.jpg";
 import Footer from "../Components/Footer/footer";
 import PlanSection from "../Components/plansection/plan";
