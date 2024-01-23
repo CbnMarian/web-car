@@ -24,7 +24,7 @@ function Footer() {
               <li>
                 <a href="tel:123456789">
                   <PhoneInTalkIcon />
-                  &nbsp; 0746950305
+                  &nbsp; +40 74655555
                 </a>
               </li>
 

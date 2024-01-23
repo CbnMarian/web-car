@@ -13,6 +13,7 @@ import CarImg6 from "../assets/review/car6.png";
 import "../Components/Styles/vehicleModels.css";
 
 import Footer from "../Components/Footer/footer";
+import BannerCall from "../Components/bannercall/bannercall";
 
 const Home = () => {
   useEffect(() => {
@@ -245,6 +246,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
+            <BannerCall />
 
             <Footer />
           </section>

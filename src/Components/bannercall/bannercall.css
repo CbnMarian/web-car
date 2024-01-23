@@ -1,0 +1,31 @@
+.book-banner {
+  background-image: url(../../assets/review/banner.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  height: 15rem;
+  margin-top: 7rem;
+  position: relative;
+  width: 100%;
+}
+.text-content {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  gap: 5rem;
+  height: 15rem;
+  position: relative;
+  width: 100%;
+  z-index: 5;
+}
+.text-content h2 {
+  font-size: 2.2rem;
+}
+.text-content span {
+  align-items: center;
+  color: #ff4d30;
+  display: flex;
+  font-size: 2.7rem;
+  gap: 1rem;
+  white-space: nowrap;
+}
