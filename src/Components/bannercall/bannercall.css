@@ -29,3 +29,21 @@
   gap: 1rem;
   white-space: nowrap;
 }
+
+@media screen and (max-width: 768px) {
+  .book-banner {
+    height: 25rem;
+    align-items: center;
+  }
+  .text-content {
+    text-align: center;
+
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .text-content span {
+    font-size: 2rem;
+  }
+}

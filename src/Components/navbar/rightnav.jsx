@@ -7,6 +7,8 @@ const Ul = styled.ul`
   display: flex;
   flex-flow: row nowrap;
   z-index: 99;
+  position: sticky;
+  top: 0;
 
   li {
     list-style-type: none;
@@ -22,8 +24,8 @@ const Ul = styled.ul`
     }
 
     a {
-      text-decoration: none; /* Remove underline */
-      color: inherit; /* Inherit the color from the parent li */
+      text-decoration: none;
+      color: inherit;
     }
   }
 
@@ -77,7 +79,7 @@ const RightNav = ({ open, handleClose }) => {
         </Link>
       </li>
       <li>
-        <Link to="/NoPage" onClick={handleItemClick}>
+        <Link to="/Testimonials" onClick={handleItemClick}>
           Testimonials
         </Link>
       </li>

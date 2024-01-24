@@ -1,20 +1,26 @@
 import NavBar from "../Components/navbar/navbar";
 
-import PlanSection from "../Components/plansection/plan";
-
-import ChooseUs from "../Components/whyChooseUs/chooseUs";
-
 import Footer from "../Components/Footer/footer";
+import BannerCall from "../Components/bannercall/bannercall";
+import HeroPages from "../Components/HeroPages/HeroPages";
+import Testimonials from "../Components/Testimonialss/testimonials";
+import ScrollToTopButton from "../Components/scrollToTop/scrollBtn";
 
 const Home = () => (
   <div>
-    <NavBar />
+    <div>
+      <>
+        <section className="testimonial-page">
+          <NavBar />
+          <HeroPages name="Testimonials" />
+          <Testimonials />
+          <ScrollToTopButton />
 
-    <PlanSection />
-
-    <ChooseUs />
-
-    <Footer />
+          <BannerCall />
+          <Footer />
+        </section>
+      </>
+    </div>
   </div>
 );
 
