@@ -43,11 +43,20 @@ export default function FAQ({ data }) {
 }
 
 function AccordionItem({ num, title, text, curOpen, onOpen }) {
+  const [contentHeight, setContentHeight] = useState(0);
   const isOpen = num === curOpen;
 
   function handleToggle() {
     onOpen(isOpen ? null : num);
   }
+
+  useEffect(() => {
+    if (isOpen) {
+      setContentHeight(document.getElementById(`content-${num}`).scrollHeight);
+    } else {
+      setContentHeight(0);
+    }
+  }, [isOpen, num]);
 
   return (
     <div className={`item ${isOpen ? "open" : ""}`} onClick={handleToggle}>
@@ -55,7 +64,17 @@ function AccordionItem({ num, title, text, curOpen, onOpen }) {
       <p className="title">{title}</p>
       <p className="icon">{isOpen ? "-" : "+"}</p>
 
-      {isOpen && <div className="content-box">{text}</div>}
+      <div
+        className="content-box"
+        style={{
+          maxHeight: `${isOpen ? contentHeight : 0}px`,
+          paddingTop: isOpen ? "16px" : "0", // Add padding when open
+          paddingBottom: isOpen ? "16px" : "0", // Add padding when open
+        }}
+        id={`content-${num}`}
+      >
+        {text}
+      </div>
     </div>
   );
 }

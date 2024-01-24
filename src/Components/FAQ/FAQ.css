@@ -29,6 +29,8 @@
 .content-box {
   grid-column: 2 / -1;
   padding-bottom: 16px;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
   line-height: 1.6;
 }
 
@@ -44,7 +46,7 @@
 
 .item {
   background-color: white;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
 
   padding: 20px 24px;
   padding-right: 48px;
@@ -55,7 +57,7 @@
   display: grid;
   grid-template-columns: auto 1fr auto;
   column-gap: 24px;
-  row-gap: 32px;
+
   align-items: center;
 }
 /* OPEN STATE */
