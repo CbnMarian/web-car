@@ -15,7 +15,6 @@ const Home = () => (
           <HeroPages name="Testimonials" />
           <Testimonials />
           <ScrollToTopButton />
-
           <BannerCall />
           <Footer />
         </section>

@@ -88,12 +88,7 @@ const RightNav = ({ open, handleClose }) => {
         </Link>
       </li>
       <li>
-        <Link to="/NoPage" onClick={handleItemClick}>
-          Our Team
-        </Link>
-      </li>
-      <li>
-        <Link to="/NoPage" onClick={handleItemClick}>
+        <Link to="/Contact" onClick={handleItemClick}>
           Contact
         </Link>
       </li>

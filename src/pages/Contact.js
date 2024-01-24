@@ -1,25 +1,68 @@
 import NavBar from "../Components/navbar/navbar";
-
-import PlanSection from "../Components/plansection/plan";
-
-import ChooseUs from "../Components/whyChooseUs/chooseUs";
-
+import "../Components/Styles/contact.css";
+import { Link } from "react-router-dom";
 import Footer from "../Components/Footer/footer";
 import BannerCall from "../Components/bannercall/bannercall";
 import ScrollToTopButton from "../Components/scrollToTop/scrollBtn";
+import HeroPages from "../Components/HeroPages/HeroPages";
+import PhoneForwardedIcon from "@mui/icons-material/PhoneForwarded";
+import EmailIcon from "@mui/icons-material/Email";
+import NavigationIcon from "@mui/icons-material/Navigation";
 
 const Home = () => (
-  <div>
-    <NavBar />
+  <>
+    <section className="contact-page">
+      <NavBar />
+      <HeroPages name="Contact" />
+      <div className="container">
+        <div className="contact-div">
+          <div className="contact-div__text">
+            <h2>Need additional information?</h2>
+            <p>
+              A multifaceted professional skilled in multiple fields of
+              research, development as well as a learning specialist. Over 15
+              years of experience.
+            </p>
+            <Link to="/Contact">
+              <PhoneForwardedIcon />
+              &nbsp; +40 74655555
+            </Link>
+            <Link to="/Contact">
+              <EmailIcon />
+              &nbsp; rentacar@gmail.com
+            </Link>
+            <Link to="/Contact">
+              <NavigationIcon />
+              &nbsp; Bucharest, Romania
+            </Link>
+          </div>
+          <div className="contact-div__form">
+            <form>
+              <label>
+                Full Name <b>*</b>
+              </label>
+              <input type="text" placeholder='E.g: "Joe Shmoe"'></input>
 
-    <PlanSection />
+              <label>
+                Email <b>*</b>
+              </label>
+              <input type="email" placeholder="youremail@example.com"></input>
 
-    <ChooseUs />
+              <label>
+                Tell us about it <b>*</b>
+              </label>
+              <textarea placeholder="Write Here.."></textarea>
 
-    <BannerCall />
-    <ScrollToTopButton />
-    <Footer />
-  </div>
+              <button type="submit">&nbsp; Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <ScrollToTopButton />
+      <BannerCall />
+      <Footer />
+    </section>
+  </>
 );
 
 export default Home;
