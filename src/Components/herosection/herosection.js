@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./herosection.css";
@@ -28,13 +29,13 @@ const Hero = () => {
               and unforgettable travel experience.
             </p>
             <div className="hero__content__btn">
-              <a className="hero__content__btn__book" href="/book-ride">
+              <Link to="/book-ride" className="hero__content__btn__book">
                 Book Ride{" "}
                 <CheckCircleOutlineOutlinedIcon style={{ marginLeft: "8px" }} />
-              </a>
-              <a className="hero__content__btn__learn" href="/learn-more">
+              </Link>
+              <Link to="/About" className="hero__content__btn__learn">
                 Learn More <ArrowForwardIosIcon style={{ marginLeft: "8px" }} />
-              </a>
+              </Link>
             </div>
           </div>
           <img className="hero__content__car" src={toyotaimg} alt="car-img" />

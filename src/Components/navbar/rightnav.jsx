@@ -9,6 +9,7 @@ const Ul = styled.ul`
   z-index: 99;
   position: sticky;
   top: 0;
+  margin: 0;
 
   li {
     list-style-type: none;
@@ -33,19 +34,21 @@ const Ul = styled.ul`
     flex-flow: column nowrap;
     background-color: #ffffff;
     position: fixed;
-    transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     top: 0;
-    right: 0;
+    right: ${({ open }) => (open ? "0" : "-100%")};
     height: 100vh;
     width: 100%;
-    padding-top: 3.5rem;
+    gap: 1rem;
     padding: 10px;
-    transition: transform 0.3s ease-in-out;
+    transition: right 0.3s ease-in-out;
     align-items: center;
+    z-index: 100;
+    justify-content: center;
+    font-size: 24px;
 
     li {
       color: #000000;
-      cursor: pointer;
+
       font-weight: 500;
       white-space: nowrap;
 
@@ -61,6 +64,7 @@ const RightNav = ({ open, handleClose }) => {
   const handleItemClick = () => {
     handleClose();
   };
+
   return (
     <Ul open={open}>
       <li>
