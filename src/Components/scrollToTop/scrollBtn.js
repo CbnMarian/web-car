@@ -45,7 +45,7 @@ const ScrollToTopButton = () => {
   }, []);
 
   return (
-    <Button visible={isVisible} onClick={scrollToTop}>
+    <Button visible={isVisible.toString()} onClick={scrollToTop}>
       <KeyboardDoubleArrowUpIcon />
     </Button>
   );

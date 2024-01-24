@@ -15,7 +15,7 @@ const ChooseUs = () => {
   return (
     <section className="choose-section">
       <div className="container" data-aos="fade-up">
-        <div choose-contaienr>
+        <div choose-contaienr="true">
           <img className="choose-container__img" src={cars} alt="cars-fundal" />
         </div>
         <div className="text-container">
