@@ -17,11 +17,11 @@ const Home = () => (
       <div className="container">
         <div className="contact-div">
           <div className="contact-div__text">
-            <h2>Need additional information?</h2>
+            <h2>Need more information?</h2>
             <p>
-              A multifaceted professional skilled in multiple fields of
-              research, development as well as a learning specialist. Over 15
-              years of experience.
+              We are a diverse team of experts excelling in various areas of
+              research, development, and learning. With over 15 years of
+              collective experience, we're here to assist you.
             </p>
             <Link to="/Contact">
               <PhoneForwardedIcon />
