@@ -14,7 +14,7 @@ import "../Components/Styles/vehicleModels.css";
 
 import Footer from "../Components/Footer/footer";
 import BannerCall from "../Components/bannercall/bannercall";
-
+import ScrollToTopButton from "../Components/scrollToTop/scrollBtn";
 const Home = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
@@ -246,6 +246,7 @@ const Home = () => {
             </div>
           </div>
           <BannerCall />
+          <ScrollToTopButton />
 
           <Footer />
         </section>

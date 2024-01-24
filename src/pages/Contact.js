@@ -6,6 +6,7 @@ import ChooseUs from "../Components/whyChooseUs/chooseUs";
 
 import Footer from "../Components/Footer/footer";
 import BannerCall from "../Components/bannercall/bannercall";
+import ScrollToTopButton from "../Components/scrollToTop/scrollBtn";
 
 const Home = () => (
   <div>
@@ -16,7 +17,7 @@ const Home = () => (
     <ChooseUs />
 
     <BannerCall />
-
+    <ScrollToTopButton />
     <Footer />
   </div>
 );

@@ -11,6 +11,7 @@ import LocationCityIcon from "@mui/icons-material/LocationCity";
 import ConstructionIcon from "@mui/icons-material/Construction";
 import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
 import BannerCall from "../Components/bannercall/bannercall";
+import ScrollToTopButton from "../Components/scrollToTop/scrollBtn";
 const Home = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
@@ -69,7 +70,7 @@ const Home = () => {
           <PlanSection />
 
           <BannerCall />
-
+          <ScrollToTopButton />
           <Footer />
         </section>
       </>

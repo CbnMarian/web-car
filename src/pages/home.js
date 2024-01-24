@@ -9,6 +9,7 @@ import Testimonials from "../Components/Testimonialss/testimonials";
 import FAQ, { faqs } from "../Components/FAQ/FAQ";
 import Download from "../Components/download/download";
 import Footer from "../Components/Footer/footer";
+import ScrollToTopButton from "../Components/scrollToTop/scrollBtn";
 
 const Home = () => (
   <div>
@@ -22,6 +23,7 @@ const Home = () => (
     <Testimonials />
     <FAQ data={faqs} />
     <Download />
+    <ScrollToTopButton />
     <Footer />
   </div>
 );

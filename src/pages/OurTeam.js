@@ -5,6 +5,7 @@ import PlanSection from "../Components/plansection/plan";
 import ChooseUs from "../Components/whyChooseUs/chooseUs";
 
 import Footer from "../Components/Footer/footer";
+import ScrollToTopButton from "../Components/scrollToTop/scrollBtn";
 
 const Home = () => (
   <div>
@@ -13,6 +14,7 @@ const Home = () => (
     <PlanSection />
 
     <ChooseUs />
+    <ScrollToTopButton />
 
     <Footer />
   </div>
