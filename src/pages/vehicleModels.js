@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import HeroPages from "../Components/HeroPages/HeroPages";
-import NavBar from "../Components/navbar/navbar";
+
 import CarImg1 from "../assets/review/car2.png";
 import CarImg2 from "../assets/review/car1.png";
 import CarImg3 from "../assets/review/car3.png";
@@ -15,6 +15,7 @@ import "../Components/Styles/vehicleModels.css";
 import Footer from "../Components/Footer/footer";
 import BannerCall from "../Components/bannercall/bannercall";
 import ScrollToTopButton from "../Components/scrollToTop/scrollBtn";
+import Nav from "../Components/nav/nav";
 const Home = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
@@ -23,7 +24,7 @@ const Home = () => {
     <div>
       <div>
         <section className="models-section">
-          <NavBar />
+          <Nav />
           <HeroPages name="Models" />
           <div className="container">
             <div className="models-div">

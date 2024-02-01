@@ -1,17 +1,16 @@
-import NavBar from "../Components/navbar/navbar";
-
 import Footer from "../Components/Footer/footer";
 import BannerCall from "../Components/bannercall/bannercall";
 import HeroPages from "../Components/HeroPages/HeroPages";
 import Testimonials from "../Components/Testimonialss/testimonials";
 import ScrollToTopButton from "../Components/scrollToTop/scrollBtn";
+import Nav from "../Components/nav/nav";
 
 const Home = () => (
   <div>
     <div>
       <>
         <section className="testimonial-page">
-          <NavBar />
+          <Nav />
           <HeroPages name="Testimonials" />
           <Testimonials />
           <ScrollToTopButton />

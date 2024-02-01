@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import HeroPages from "../Components/HeroPages/HeroPages";
-import NavBar from "../Components/navbar/navbar";
 import Rent from "../assets/from outside/rent.jpg";
 import Footer from "../Components/Footer/footer";
 import PlanSection from "../Components/plansection/plan";
@@ -12,6 +11,7 @@ import ConstructionIcon from "@mui/icons-material/Construction";
 import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
 import BannerCall from "../Components/bannercall/bannercall";
 import ScrollToTopButton from "../Components/scrollToTop/scrollBtn";
+import Nav from "../Components/nav/nav";
 const Home = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
@@ -21,7 +21,7 @@ const Home = () => {
     <div>
       <>
         <section className="about-page">
-          <NavBar />
+          <Nav />
           <HeroPages name="About" />
           <div className="container" data-aos="fade-down">
             <div className="about-main">

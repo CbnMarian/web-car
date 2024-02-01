@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import NavBar from "../Components/navbar/navbar";
+
 import "../Components/Styles/contact.css";
 import { Link } from "react-router-dom";
 import Footer from "../Components/Footer/footer";
@@ -11,6 +11,7 @@ import HeroPages from "../Components/HeroPages/HeroPages";
 import PhoneForwardedIcon from "@mui/icons-material/PhoneForwarded";
 import EmailIcon from "@mui/icons-material/Email";
 import NavigationIcon from "@mui/icons-material/Navigation";
+import Nav from "../Components/nav/nav";
 
 const Home = () => {
   useEffect(() => {
@@ -19,7 +20,7 @@ const Home = () => {
   return (
     <div>
       <section className="contact-page">
-        <NavBar />
+        <Nav />
         <HeroPages name="Contact" />
         <div className="container">
           <div className="contact-div">
